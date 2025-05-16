@@ -48,22 +48,6 @@
 	</div>
 
  -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const checkExist = setInterval(function () {
-      const meanBar = document.querySelector(".mean-bar");
-      if (meanBar && !document.querySelector(".mean-bar .mobile-logo")) {
-        const logo = document.createElement("a");
-        logo.href = "index.html";
-        logo.className = "mobile-logo";
-        logo.innerHTML = '<img src="assets/images/logo.png" alt="logo" />';
-        meanBar.prepend(logo);
-        clearInterval(checkExist);
-      }
-    }, 100);
-  });
-</script>
-
 
 	<!--==================================================-->
 	<!-- Start Polytia Top Menu section -->
@@ -132,6 +116,22 @@
 	<!--==================================================-->
 
 	<!-- Indastre Mobile Menu Area -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const checkExist = setInterval(function () {
+      const meanBar = document.querySelector(".mean-bar");
+      if (meanBar && !document.querySelector(".mean-bar .mobile-logo")) {
+        const logo = document.createElement("a");
+        logo.href = "index.html";
+        logo.className = "mobile-logo";
+        logo.innerHTML = '<img src="assets/images/logo.png" alt="logo" />';
+        meanBar.prepend(logo);
+        clearInterval(checkExist);
+      }
+    }, 100);
+  });
+</script>
+
 <div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none mean-container ">
 		<div class="mobile-menu">
 			<nav class="Indastre_menu">
