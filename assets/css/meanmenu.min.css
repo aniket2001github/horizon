@@ -1,6 +1,6 @@
 a.meanmenu-reveal{display:none}
 .mean-container .mean-bar {
-  background: #f1db36;
+  background: #ffffff;
   float: left;
   min-height: 60px;
   padding: 4px 0 0;
@@ -119,13 +119,16 @@ a.meanmenu-reveal{display:none}
 .mean-container a.meanmenu-reveal:hover span {
   background: #fff;
 }
-.mean-container .mean-bar::before {
-    color: #fff;
-    content: "Indastre";
-    font-size: 28px;
-    font-weight: 600;
-    left: 10px;
-    position: absolute;
-    top: 18px;
+
+.mean-bar .mobile-logo {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 10px 0;
 }
+
+.mean-bar .mobile-logo img {
+  height: 40px;
+  width: auto;
+}
+
 
